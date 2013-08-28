@@ -9,7 +9,7 @@ mbs_client: Modbus TCP reader.
 ------------------------------
     mbs_client.py -h
 
-usage: 
+    usage: 
     
     mbs_client.py [-h] [-l TCP_PORT] [-i TCP_IP] [-n UNIT_NUMBER]
                      [-a ADRESS] [-c COUNT] [-t TIMEOUT] [-f] [-v VALUE]                     
@@ -35,7 +35,7 @@ mbs_server: Modbus TCP to Serial repeater.
 ------------------------------------------
     mbs_server.py -h
 
-usage: 
+    usage: 
     
     mbs_server.py [-h] [-l TCP_PORT] [-b BAUDRATE] [-p PARITY] [-c PORT]
                      [-t TAL] [-d]

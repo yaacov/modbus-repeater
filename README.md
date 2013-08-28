@@ -7,15 +7,14 @@ for incoming modbus requests, and pyserial to repeat the request over serial lin
 
 mbs_client: Modbus TCP reader.
 ------------------------------
-    mbs_client.py -h
 
-    usage: 
-    
+Modbus TCP reader.
+
+    mbs_client.py -h
+    usage:   
     mbs_client.py [-h] [-l TCP_PORT] [-i TCP_IP] [-n UNIT_NUMBER]
                      [-a ADRESS] [-c COUNT] [-t TIMEOUT] [-f] [-v VALUE]                     
                      [-r {3,4,16}]
-
-Modbus TCP reader.
 
 optional arguments:
 
@@ -33,14 +32,13 @@ optional arguments:
 
 mbs_server: Modbus TCP to Serial repeater.
 ------------------------------------------
-    mbs_server.py -h
-
-    usage: 
-    
-    mbs_server.py [-h] [-l TCP_PORT] [-b BAUDRATE] [-p PARITY] [-c PORT]
-                     [-t TAL] [-d]
 
 Modbus TCP to Serial repeater.
+
+    mbs_server.py -h
+    usage: 
+    mbs_server.py [-h] [-l TCP_PORT] [-b BAUDRATE] [-p PARITY] [-c PORT]
+                     [-t TAL] [-d]
 
 optional arguments:
 

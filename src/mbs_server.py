@@ -18,6 +18,11 @@
 # Copyright (C) 2013 Yaacov Zamir <kobi.zamir@gmail.com>
 # Author: Yaacov Zamir (2013)
 
+''' mbs-server
+
+A modbus tcp to serial repeater
+'''
+
 import sys
 import time
 import datetime
@@ -29,6 +34,8 @@ from struct import pack, unpack
 from thread import start_new_thread
 
 try:
+    # try to import python tal serial module
+    # for the tal serial line hardware
     from pyca.ca_com_utils import *
 except:
     pass

@@ -43,7 +43,7 @@ class SerialTal():
         Available tal functions:
             0x03: read holding registers
             0x04: read input registers
-            0x16: write input registers
+            0x10: write input registers
     '''
     def __init__(self, tal_addr):
         self.cache = {}
@@ -169,7 +169,7 @@ class SerialModbus(Serial):
         Available modbus functions:
             0x03: read holding registers
             0x04: read input registers
-            0x16: write input registers
+            0x10: write input registers
     '''
     cache = {}
     cache_validity_time = 1 # cache is valid for 1 sec
@@ -310,7 +310,7 @@ class ModbusRepeater:
         Available modbus functions:
             0x03: read holding registers
             0x04: read input registers
-            0x16: write input registers
+            0x10: write input registers
     '''
     
     def __init__(self, soc, backend):
@@ -324,6 +324,7 @@ class ModbusRepeater:
         # implementing:
         #    get_input_registers
         #    get_holding_registers
+        #    set_input_registers
         self.backend = backend
     
     def dump_registers(self, registers):
